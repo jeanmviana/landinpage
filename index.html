@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="asserts/css/style.css" />
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@700;900&display=swap"
+    rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <title>Creative House New</title>
+</head>
+
+<body>
+  
+  <header id="event-description">
+    <div id="disclaimer">
+      <h2>1º Creative Inovation House</h2>
+      <p class="about-event">evento 100% Online, especialmente preparado para revolucionar sua criatividade.</p>
+      <p>Data do evento</p>
+      <p class="event-date">Sábado, 01 de Julho de 2023, a partir das 18h</p>
+    </div>
+    <div id="subscription-form">
+      <!-- <p>Preencha o formulário para receber os detalhes do evento.</p> -->
+      <form method="post" action="enviar.php">
+
+        <h1>Entre em contato</h1>
+        <p>preencha o formulário abaixo e entraremos em contato com você</p>
+        <div id="input-single">
+          <input class="input" type="text" id="nome" name="nome" required autocomplete="off">
+          <label for="nome">seu nome completo</label>
+        </div>
+
+        <div id="input-single">
+          <input class="input" type="text" id="email" name="email" required autocomplete="off">
+          <label for="nome">seu e-mail</label>
+        </div>
+
+        <div id="input-single">
+          <input class="input" type="text" id="telefone" name="telefone" required autocomplete="off">
+          <label for="nome">seu telefone</label>
+        </div>
+
+        <div class="btn"><input type="submit" value="Enviar"></div>
+        
+        
+      </form>
+    </div>
+  </header>
+  <section id="key-benefits">
+    <h2>O que você vai aprender:</h2>
+    <div class="benefits">
+      <div class="benefit">
+        <div id="benefit-1" class="benefit-img"></div>
+        <p>Técnicas avançadas em decoração</p>
+      </div>
+      <div class="benefit">
+        <div id="benefit-2" class="benefit-img"></div>
+        <p>Idéias Criativas</p>
+      </div>
+      <div class="benefit">
+        <div id="benefit-3" class="benefit-img"></div>
+        <p>Mesa redonda sobre modelos em alta</p>
+      </div>
+    </div>
+  </section>
+  </section>
+  <section id="location">
+    <div id="address">
+      <i class="bi bi-geo-alt-fill"></i>
+      <div id="address-details">
+        <p>Rua do Evento, Nº 1222</p>
+        <p>Bairro do Evento</p>
+        <p>Abertura: 14:00h</p>
+      </div>
+    </div>
+    <div id="about-location">
+      <h3>Sobre o Evento</h3>
+      <p>
+        O Evento será totalmente online, atraves da nossa plataforma, onde teremos como palestrantes, renomados nomes do
+        ramo de designer, bem como exemplos de vários ambientes, tanto internos como externos.
+      </p>
+    </div>
+  </section>
+  <section id="details">
+    <div class="detail" id="detail-1">
+      <img src="asserts/img/ambiente-6.jpg" alt="escritorio decorado" />
+      <div class="detail-description">
+        <h3>Conheça os ambientes que você vai aprender a decorar</h3>
+      </div>
+    </div>
+    <div class="detail" id="detail-2">
+      <div class="detail-description">
+        <h3>DETALHES</h3>
+        <ul>
+          <li>posicionamento</li>
+          <li>aproveitmento de espaço</li>
+          <li>combinação de cores</li>
+          <li>organização</li>
+          <li>e muito mais...</li>
+        </ul>
+      </div>
+      <img src="asserts/img/ambiente-4.jpg" alt="sala decorada" />
+    </div>
+    <div class="detail" id="detail-3">
+      <div class="detail-description">
+        <img src="asserts/img/ambiente-5.jpg" alt="sala de estar decorada" />
+        <h3>OBJETOS</h3>
+        <ul>
+          <li>Cadeiras</li>
+          <li>mesas</li>
+          <li>Espelhos</li>
+          <li>Plasntas</li>
+          <li>e muito mais...</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="cta">
+    <h3>Gostou? Então se inscreva:</h3>
+    <button class="btn">Solicitar Inscrição</button>
+  </section>
+  <footer id="footer">
+    <h3>A3 Creative</h3>
+    <p>A Evolução da Decoração de Interiores</p>
+    <p><span>Entre em Contato: </span>oi@a3creative.com.br</p>
+    <p><span>Telefone: </span>(11) 9999-9999</p>
+    
+  </footer>
+  <?php
+  <script>
+    <?php if (!empty($mensagem)) : ?>
+        alert("<?php echo $mensagem; ?>");
+    <?php endif; ?>
+</script>
+
+  ?>
+</body>
+
+</html>
